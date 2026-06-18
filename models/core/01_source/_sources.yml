@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: looker_ecommerce_source
+    database: qwiklabs-asl-03-46a033ad38bd
+    schema: look_ecommerce
+    tables:
+      - name: order_items
+        loaded_at_field: created_at
+        freshness:
+          error_after:
+            count: 12
+            period: hour
+      - name: users
+      - name: products
+      - name: orders
