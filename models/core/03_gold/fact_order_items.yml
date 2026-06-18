@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fact_order_items
+    description: "Fact table containing transaction-level data for order items, enriched with cost and gross profit."
+    columns:
+      - name: order_item_id
+        description: "Primary key for individual order items."
+        data_tests:
+          - unique
+          - not_null

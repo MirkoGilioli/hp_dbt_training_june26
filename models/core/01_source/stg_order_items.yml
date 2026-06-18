@@ -2,8 +2,10 @@ version: 2
 
 models:
   - name: stg_order_items
+    description: "Staging model for order items data."
     columns:
       - name: order_item_id
+        description: "Primary key for order items."
         data_tests:
           - unique
           - not_null

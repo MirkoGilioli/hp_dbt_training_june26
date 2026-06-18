@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_orders
+    description: "Dimension table containing overall order header information."
+    columns:
+      - name: order_id
+        description: "Primary key for the order dimension."
+        data_tests:
+          - unique
+          - not_null

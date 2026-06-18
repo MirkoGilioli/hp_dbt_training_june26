@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: "Dimension table containing detailed product information."
+    columns:
+      - name: product_id
+        description: "Primary key for the product dimension."
+        data_tests:
+          - unique
+          - not_null

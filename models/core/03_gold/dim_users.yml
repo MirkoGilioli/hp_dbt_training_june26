@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "Dimension table containing cleaned and consolidated user information."
+    columns:
+      - name: user_id
+        description: "Primary key for the user dimension."
+        data_tests:
+          - unique
+          - not_null

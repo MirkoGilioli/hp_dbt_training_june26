@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: "Staging model for users data."
+    columns:
+      - name: user_id
+        description: "Primary key for users."
+        data_tests:
+          - unique
+          - not_null
